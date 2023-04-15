@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durable</title>
+    <link rel="stylesheet" href="Durable.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/69d4a1ba28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="row items-center">
+        <div class="col-md-6">
+            <img src="logo.png" style="width:50px; height:50px;" alt="logo">
+        </div>
+        
+        <div class="col-md-6 container" id="container">
+    
+            <div class="main-menu" id="side-bar">
+                <img src="cancel.png" id="cancel" alt="cancel">
+                
+                <ul>
+                    
+                    <li><a href="About_Us.html">About Us</a></li>
+                    <li><a href="Services.html">Services</a></li> 
+                    <li><a href="project.html">Project</a></li>  
+                    <li><a href="Growth_Now.html">Growth Now</a></li>
+                    <a href="Durable.html"><i style="color: rgb(14, 11, 11);" class="fa-solid fa-house"></i></a>             
+        
+                   
+                </ul>
+            </div>
+            <div class="menu">   
+              <i class="fa-solid fa-bars" id="show"></i>
+            </div>
+          </div>
+    </header>
+    <h1 style="margin-top: 22vh; width: 100%; text-align: center;">Our services</h1>
+    <div class="projects">
+        
+        <figure class="services">
+            <img src="strategy.png" class="fit" alt="services">
+            <figcaption style="width:100%">
+                
+                <h3>Strategy Formulation</h3>
+                <p style="width: 350px; text-align: centre; font-size:17px;">We help businesses come up with strategic plans that win in the marketplace. We work with C-suite executives and high-level managers to understand and provide recommendations for a Brand's goals and objectives.</p>
+             </figcaption>
+        </figure>
+        <figure class="services">
+
+            
+            <img src="Brand.png" class="fit" alt="services">
+            <figcaption style="width:100%">
+                <h3>Brand Audit and Analysis</h3>
+                <p style="width: 350px; text-align: centre; font-size:17px;">We conduct checkups that evaluates your brand's position in the marketplace, its strengths and weaknesses, and how to strengthen it. We help businesses to Identify the unseen issues costing your brand and what to do about them.</p>
+             </figcaption>
+        </figure>
+        <figure class="services">
+            <img src="Digital.png" class="fit" alt="services">
+            <figcaption style="width:100%">
+                
+                <h3>Digital Marketing</h3>
+                <p style="width: 350px; text-align: centre; font-size:17px;">We deploy online marketing models to help promote brands to connect with potential customers using the internet and other forms of digital communication. This includes not Search Engine Optimization, Pay-per-Click, Social Media Marketing, Content Marketing, Email Marketing, Mobile Marketing, Marketing Analytics and Affiliate Marketing .
+                </p>
+             </figcaption>
+        </figure>
+        <figure class="services">
+
+       
+             <img src="content.png" class="fit" alt="serve">
+             <figcaption style="width:100%">
+                <h3>Growth Hacking</h3>
+                <p style="width: 350px; text-align: centre; font-size:17px;">We hack Growth through laser focus tactics to achieve rapid and sustainable growthfor pur clients. We experiment through A/B testing and curating insights that uncover the customer journey, weaving a customer led brand story that layers across each stage of that journey by deploying minimal resources before scaling after hypothesis validation</p>
+             </figcaption>
+        </figure>
+        <figure class="services">
+
+            <img src="management.png" class="fit" alt="serv3">
+            <figcaption style="width:100%">
+                <h3>Content Marketing</h3>
+                <p style="width: 350px; text-align: centre; font-size:17px;">We help build a long term relationship with the target audience. We curate content that attract, engage, and retain an audience by creating and sharing relevant articles, videos, podcasts, and other media. We establish expertise, promote brand awareness, and and achieve TOMA at POS.</p>
+             </figcaption>
+        </figure>
+        <figure class="services">
+            <img src="brand.png" class="fit" alt="services">
+            <figcaption style="width:100%">
+                
+                <h3>Brand Management</h3>
+                <p style="width: 350px; text-align: centre; font-size:17px;">We manage brands to dominate their categories in the market place. We deploy plans to foster brand perception and and loyalty thus building the brand equity so the brand amplifies in value and return on investment for its handlers and stakeholders.</p>
+             </figcaption>
+        </figure>
+        
+
+    </div>
+
+
+
+
+
+    <div class="layer3">   
+        <h3 style="color: black;">The Bond Growth Agency</h3>
+        <p style="color: black;">  
+           The first agency you should have called when you thought of Growth. The last agency you will need for your brand and business to grow.
+        </p>
+        <div class="font">
+         <i class="fa-brands fa-facebook"></i>
+         <i class="fa-brands fa-square-instagram"></i>
+         <i class="fa-brands fa-twitter"></i> 
+        </div>
+   </div> 
+<script>
+const Show = document.getElementById('show');
+const Hide = document.getElementById('cancel');
+const menu = document.getElementById('side-bar');
+const Wrapper = document.body.innerHTML
+function Display(){
+menu.classList.add('sidebar');
+menu.classList.remove('main-menu');
+}
+function Hidden(){
+menu.classList.add('main-menu');
+menu.classList.remove('sidebar');
+}
+Show.addEventListener('click', Display);
+Hide.addEventListener('click', Hidden);
+</script>    
+</body>
+</html>          

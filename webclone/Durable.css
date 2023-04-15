@@ -1,0 +1,744 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quattrocento&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-x: hidden;
+}
+
+.slide1 {
+  background-image: url("officespace.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5vw;
+  padding-top: 45vh;
+  gap: 2.5vh;
+}
+
+.slide2 {
+  margin-top: 102vh;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.slide2 p {
+  color: gray;
+}
+
+.slide6 {
+  margin-top: 25vh;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.slide6 p {
+  color: gray;
+}
+
+#aboutbtn {
+  padding: 6px;
+  color: #111827;
+  text-decoration: none;
+}
+
+.fit {
+  width: 100%;
+}
+
+header {
+  background-color: white;
+  top: 0;
+  left: 0;
+  border-bottom: 0.5px solid #e9e1e1;
+  position: fixed;
+  display: flex;
+  height: 18vh;
+  width: 100vw;
+  z-index: 999;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  margin-top: 6vh;
+  margin-left: 3vh;
+}
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+}
+
+.sidebar img {
+  float: right;
+  margin: 3px 3px 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: gray;
+  padding-left: 40px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.sidebar ul a i {
+  margin-right: 16px;
+}
+
+.sidebar ul li:hover a {
+  padding-left: 50px;
+}
+
+.menu {
+  float: right;
+}
+
+#show {
+  font-size: 30px;
+  /* set the font size */
+  color: #3f3d3d;
+  /* set the color */
+  cursor: pointer;
+  /* add a cursor pointer on hover */
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.main-menu {
+  display: none;
+  float: right;
+}
+
+#check {
+  display: none;
+}
+
+.contact {
+  width: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  background-color: #ccc;
+}
+
+.form a {
+  color: #111827;
+  text-decoration: none;
+}
+
+.layer3 {
+  height: 40vh;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: gray;
+  padding-top: 5vh;
+}
+
+.head-project {
+  margin-left: 5%;
+}
+
+.font {
+  display: flex;
+  height: 10vh;
+  width: 30%;
+  gap: 4%;
+}
+
+.services {
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.office a {
+  color: #111827;
+  text-decoration: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.office::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 0, 0, 0.68);
+}
+
+.content {
+  position: relative;
+}
+
+.content h1 {
+  color: white;
+  font-family: 'Oswald',sans-serif;
+  font-size: 4.5em;
+}
+
+.content p {
+  color: white;
+  font-family: "Quattrocento";
+  font-size: 1.2em;
+}
+
+.fit {
+  width: 100%;
+}
+
+.fits {
+  width: 100%;
+}
+
+figcaption {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  padding-left: 5%;
+}
+
+.form {
+  width: 100%;
+  height: 70vh;
+}
+
+.form input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid rgba(92, 121, 139, 0.301);
+  border-radius: 8px;
+}
+
+.form textarea {
+  width: 100%;
+  height: 20vh;
+  border: 1px solid #8f8fa0;
+  border-radius: 8px;
+}
+
+.form p {
+  display: none;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 46vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+}
+
+.swiper-container .bold {
+  font-size: 18px;
+  color: black;
+  width: 60vw;
+  padding-left: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-container .swipper-nav {
+  color: black;
+  height: 8vh;
+}
+
+.swiper-container .swiper-pagination {
+  color: black;
+}
+
+.swiper-container .speaker {
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 5%;
+}
+
+.swiper-container .swiper-slide {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* for laptops and large screen */
+@media (min-width: 992px) {
+  body {
+    font-size: 14px;
+  }
+  #container {
+    padding-left: 10%;
+    padding-top: 6vh;
+  }
+  #container a:hover {
+    border-bottom: 3px solid gray;
+  }
+  #online {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  .info {
+    width: 100%;
+  }
+  .gallery-container {
+    display: flex;
+    height: 150vh;
+    width: 100%;
+    margin-left: 5%;
+  }
+  .menu {
+    display: none;
+  }
+  #cancel {
+    display: none;
+  }
+  .items-center {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-menu {
+    position: absolute;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .main-menu ul li {
+    display: inline-block;
+  }
+  .main-menu ul li a {
+    color: #111827;
+    text-decoration: none;
+    margin-left: 2vw;
+  }
+  .main-menu ul li .link {
+    font-family: Oswald;
+    font-size: 1.3em;
+  }
+  .main-menu ul li a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  .gallery-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .gallery-list li {
+    margin-right: 10px;
+  }
+  .gallery-list li:last-child {
+    margin-right: 0;
+  }
+  .gallery-list img {
+    min-width: 100%;
+    height: 250px;
+    cursor: pointer;
+  }
+  .slide1 {
+    background-image: url("officespace.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 116vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-top: 38vh;
+    margin-bottom: 30px;
+    gap: 2.5vh;
+  }
+  .slide2 {
+    padding-top: 20vh;
+    width: 90%;
+  }
+  .About {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .fits {
+    width: 50%;
+  }
+  .fit {
+    width: 100%;
+    height: 270px;
+    padding: 5%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  header img {
+    width: 6%;
+    height: 30%;
+    margin-top: 4vh;
+    margin-left: 8vh;
+  }
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 5%;
+  }
+  .layer3 {
+    height: 40vh;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: gray;
+    padding-top: 5vh;
+  }
+  .layer3 p {
+    width: 50%;
+  }
+  .contact {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    height: 58vh;
+  }
+  .txt {
+    width: 50vw;
+    padding-top: 15vh;
+  }
+  .form {
+    width: 50vw;
+  }
+  .form p {
+    display: block;
+  }
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    background-color: #ccc;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  body {
+    font-size: 14px;
+  }
+  #online {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  .info {
+    width: 100%;
+  }
+  .gallery-container {
+    display: flex;
+    width: 100%;
+    margin-left: 2%;
+  }
+  .gallery-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+  }
+  .gallery-list li {
+    margin-right: 10px;
+  }
+  .gallery-list li:last-child {
+    margin-right: 0;
+  }
+  .gallery-list img {
+    min-width: 100%;
+    height: 250px;
+    cursor: pointer;
+  }
+  .slide1 {
+    background-image: url("officespace.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 116vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-top: 38vh;
+    margin-bottom: 30px;
+    gap: 2.5vh;
+  }
+  .slide2 {
+    padding-top: 20vh;
+    width: 90%;
+  }
+  .About {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .fits {
+    width: 50%;
+  }
+  .fit {
+    width: 100%;
+    padding: 5px;
+    height: 270px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  header img {
+    width: 6%;
+    height: 30%;
+    margin-top: 4vh;
+    margin-left: 8vh;
+  }
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 3%;
+  }
+  .layer3 {
+    height: 40vh;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: gray;
+    padding-top: 5vh;
+  }
+  .layer3 p {
+    width: 50%;
+  }
+  .contact {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    height: 58vh;
+  }
+  .txt {
+    width: 50vw;
+    padding-top: 6vh;
+  }
+  .form {
+    margin-left: 10%;
+    width: 50vw;
+  }
+  .form p {
+    display: block;
+  }
+}
+
+/*Query for mobile phones */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    width: 100%;
+  }
+  #online {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .head-project {
+    margin-left: 5%;
+  }
+  .projects {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .gallery-container {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .gallery-container img {
+    width: 80%;
+  }
+  .gallery-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .gallery-list li {
+    margin-right: 10px;
+  }
+  .gallery-list li:last-child {
+    margin-right: 0;
+  }
+  .gallery-list img {
+    min-width: 100%;
+    height: 200px;
+    cursor: pointer;
+  }
+  .slide1 {
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+    width: 100%;
+    padding-top: 6vh;
+    margin-top: 18vh;
+    gap: 7px;
+  }
+  .office {
+    width: 100%;
+  }
+  .office .About {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .office .About img {
+    float: left;
+    width: 90%;
+  }
+  .office .About .text {
+    float: left;
+    width: 45%;
+  }
+  .office .slide2 {
+    width: 90%;
+  }
+  .office .slide2 h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .fit {
+    width: 100%;
+  }
+  a {
+    color: #111827;
+    text-decoration: none;
+    width: 100%;
+    padding-left: 27%;
+    float: left;
+  }
+}
+
+.office::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 0, 0, 0.68);
+}
+
+.content {
+  margin-top: 5vh;
+  align-items: center;
+  width: 90vw;
+  justify-items: center;
+  gap: 2vh;
+}
+
+.content h1 {
+  font-size: 3.2em;
+}
+
+.content p {
+  font-size: 14.8px;
+}
+
+.content .contact {
+  height: 30vh;
+  padding-top: 5vh;
+}
+
+.content .form {
+  display: block;
+}
+
+.content .form input {
+  width: 100%;
+}
+
+/*Query for smallphones */
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    font-size: 8px;
+  }
+  .slide1 {
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    width: 100vw;
+    padding-top: 8vh;
+    margin-top: 16%;
+    gap: 5vh;
+  }
+  .background-image {
+    height: 80vh;
+    width: 100vw;
+    padding-top: 16vh;
+  }
+  header {
+    height: 15vh;
+  }
+  header img {
+    width: 6.5vw;
+    height: 6vh;
+    margin-left: 1vw;
+    margin-top: 3.5vh;
+  }
+  .content h1 {
+    font-size: 2.2em;
+  }
+  .content p {
+    font-size: 0.8em;
+  }
+}
